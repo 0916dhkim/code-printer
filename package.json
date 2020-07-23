@@ -1,0 +1,31 @@
+{
+  "name": "code-printer",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prestart": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0916dhkim/code-printer.git"
+  },
+  "author": "Donghyeon Kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0916dhkim/code-printer/issues"
+  },
+  "homepage": "https://github.com/0916dhkim/code-printer#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.7"
+  }
+}
