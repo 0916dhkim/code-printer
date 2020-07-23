@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/0916dhkim/code-printer#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "typescript": "^3.9.7"
   }
 }
