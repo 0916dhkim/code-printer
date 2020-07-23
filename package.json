@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/0916dhkim/code-printer/issues"
   },
-  "homepage": "https://github.com/0916dhkim/code-printer#readme"
+  "homepage": "https://github.com/0916dhkim/code-printer#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
