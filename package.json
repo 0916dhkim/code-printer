@@ -5,6 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prestart": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
