@@ -1,0 +1,6 @@
+@import-normalize;
+
+* {
+  font-family: monospace;
+  margin: 0;
+}

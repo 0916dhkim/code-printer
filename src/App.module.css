@@ -1,0 +1,30 @@
+@media print {
+  .interface {
+    display: none;
+  }
+}
+
+@media screen {
+  .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 0 1em 1em grey;
+    margin-bottom: 1em;
+    padding: 3em;
+    gap: 2em;
+  }
+}
+
+.heading {
+  text-align: center;
+}
+
+.loadingMessage {
+  text-align: center;
+}
+
+.errorMessage {
+  color: red;
+}

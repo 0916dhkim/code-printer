@@ -1,0 +1,14 @@
+.container {
+  font-family: monospace;
+  width: 120em;
+}
+
+.lineNumber {
+  text-align: right;
+  color: grey;
+  padding-right: 1em;
+}
+
+.code {
+  white-space: pre;
+}
