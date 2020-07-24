@@ -1,5 +1,6 @@
 {
   "name": "code-printer",
+  "homepage": "https://0916dhkim.github.io/code-printer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
