@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { ApplicationState } from "./store";
 import { SourceCode } from "./SourceCode";
 import Controls from "./Controls";
+import style from "./App.module.css";
 
 
 function App() {
@@ -13,12 +14,12 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className={style.interface}>
         <h1>Code Printer</h1>
         <Controls />
-      </header>
-      {isLoading && <p>Loading ...</p>}
-      {error && <p>{error.message}</p>}
+        {isLoading && <p>Loading ...</p>}
+        {error && <p>{error.message}</p>}
+      </div>
       {sourceCode && <SourceCode sourceCode={sourceCode} language={languageInput} />}
     </div>
   );
