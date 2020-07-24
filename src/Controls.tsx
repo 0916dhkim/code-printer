@@ -55,7 +55,7 @@ export default function Controls() {
 
   return (
     <form className={style.container} onSubmit={renderCode}>
-      <span className={style.label}>URL :</span>
+      <span className={style.label}>GitHub URL :</span>
       <input className={style.input} type="url" name="url" value={urlInput} onChange={e => dispatch({type: "SET_URL_INPUT", value: e.target.value})} />
       <span className={style.label}>Programming Language :</span>
       <input className={style.input} type="text" name="language" value={languageInput} onChange={e => dispatch({ type: "SET_LANGUAGE_INPUT", value: e.target.value })} />
