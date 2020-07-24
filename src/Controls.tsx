@@ -32,7 +32,7 @@ export default function Controls() {
       ].join("/");
 
       // Get raw content.
-      const fetchResult = await axios.get(parsed.toString());
+      const fetchResult = await axios.get(parsed.toString(), { transformResponse:[] });
 
       // Update page title.
       document.title = pathArray.slice(4).join("/");

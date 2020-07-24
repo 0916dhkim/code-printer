@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { highlight, getLanguage } from "highlight.js";
 import ReactHtmlParser from "react-html-parser";
-import "highlight.js/styles/xcode.css";
+import "highlight.js/styles/vs.css";
 import style from "./SourceCode.module.css";
 
 type Props = {
