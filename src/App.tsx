@@ -25,6 +25,7 @@ async function githubUrlToRaw(githubUrl: string): Promise<string> {
 function App() {
   const dispatch = useDispatch<ApplicationDispatch>();
   const urlInput = useSelector((state: ApplicationState) => state.urlInput);
+  const languageInput = useSelector((state: ApplicationState) => state.languageInput);
   const isLoading = useSelector((state: ApplicationState) => state.isLoading);
   const sourceCode = useSelector((state: ApplicationState) => state.sourceCode);
   const error = useSelector((state: ApplicationState) => state.error);
@@ -59,12 +60,16 @@ function App() {
             URL
             <input type="url" name="url" value={urlInput} onChange={e => dispatch({type: "SET_URL_INPUT", value: e.target.value})} />
           </label>
+          <label>
+            Programming Language
+            <input type="text" name="language" value={languageInput} onChange={e => dispatch({ type: "SET_LANGUAGE_INPUT", value: e.target.value })} />
+          </label>
           <input type="submit" value="Render" />
         </form>
       </header>
       {isLoading && <p>Loading ...</p>}
       {error && <p>{error.message}</p>}
-      {sourceCode && <SourceCode sourceCode={sourceCode} />}
+      {sourceCode && <SourceCode sourceCode={sourceCode} language={languageInput} />}
     </div>
   );
 }

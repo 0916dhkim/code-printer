@@ -2,6 +2,7 @@ import { createStore } from "redux";
 
 export type ApplicationState  = {
   urlInput: string
+  languageInput: string
   isLoading: boolean
   sourceCode?: string
   error?: Error
@@ -9,6 +10,10 @@ export type ApplicationState  = {
 
 type Action = {
   type: "SET_URL_INPUT",
+  value: string
+}
+| {
+  type: "SET_LANGUAGE_INPUT",
   value: string
 }
 | {
@@ -25,6 +30,7 @@ type Action = {
 
 const initialState: ApplicationState = {
   urlInput: "",
+  languageInput: "",
   isLoading: false
 }
 
@@ -34,6 +40,11 @@ function reducer(state: ApplicationState = initialState, action: Action): Applic
       return {
         ...state,
         urlInput: action.value
+      };
+    case "SET_LANGUAGE_INPUT":
+      return {
+        ...state,
+        languageInput: action.value
       };
     case "START_LOADING":
       return {
