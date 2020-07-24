@@ -16,9 +16,11 @@ function App() {
     <div className="App">
       <div className={style.interface}>
         <h1 className={style.heading}>Code Printer</h1>
-        <Controls />
-        {isLoading && <p>Loading ...</p>}
-        {error && <p>{error.message}</p>}
+        {isLoading
+          ? <p className={style.loadingMessage}>Loading ...</p>
+          : <Controls />
+        }
+        {error && <p className={style.errorMessage}>{error.message}</p>}
       </div>
       {sourceCode && <SourceCode sourceCode={sourceCode} language={languageInput} />}
     </div>

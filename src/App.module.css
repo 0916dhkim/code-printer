@@ -13,10 +13,18 @@
     box-shadow: 0 0 1em 1em grey;
     margin-bottom: 1em;
     padding: 3em;
+    gap: 2em;
   }
 }
 
 .heading {
   text-align: center;
-  margin-bottom: 2em;
+}
+
+.loadingMessage {
+  text-align: center;
+}
+
+.errorMessage {
+  color: red;
 }
