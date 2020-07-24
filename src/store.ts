@@ -29,7 +29,6 @@ const initialState: ApplicationState = {
 }
 
 function reducer(state: ApplicationState = initialState, action: Action): ApplicationState {
-  console.log(action);
   switch (action.type) {
     case "SET_URL_INPUT":
       return {
