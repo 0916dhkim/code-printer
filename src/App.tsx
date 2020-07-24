@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { ApplicationState, ApplicationDispatch } from "./store";
+import { SourceCode } from "./SourceCode";
 import axios from "axios";
 
 /**
@@ -63,7 +64,7 @@ function App() {
       </header>
       {isLoading && <p>Loading ...</p>}
       {error && <p>{error.message}</p>}
-      {sourceCode ?? <p>{sourceCode}</p>}
+      {sourceCode && <SourceCode sourceCode={sourceCode} />}
     </div>
   );
 }
