@@ -62,7 +62,8 @@ function reducer(state: ApplicationState = initialState, action: Action): Applic
       return {
         ...state,
         isLoading: false,
-        error: action.error
+        error: action.error,
+        sourceCode: undefined
       };
     default:
       return state;
