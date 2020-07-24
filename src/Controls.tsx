@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ApplicationState, ApplicationDispatch } from "./store";
+import style from "./Controls.module.css";
 import axios from "axios";
 
 /**
@@ -53,16 +54,12 @@ export default function Controls() {
   }
 
   return (
-    <form onSubmit={renderCode}>
-      <label>
-        URL
-        <input type="url" name="url" value={urlInput} onChange={e => dispatch({type: "SET_URL_INPUT", value: e.target.value})} />
-      </label>
-      <label>
-        Programming Language
-        <input type="text" name="language" value={languageInput} onChange={e => dispatch({ type: "SET_LANGUAGE_INPUT", value: e.target.value })} />
-      </label>
-      <input type="submit" value="Render" />
+    <form className={style.container} onSubmit={renderCode}>
+      <span className={style.label}>URL :</span>
+      <input className={style.input} type="url" name="url" value={urlInput} onChange={e => dispatch({type: "SET_URL_INPUT", value: e.target.value})} />
+      <span className={style.label}>Programming Language :</span>
+      <input className={style.input} type="text" name="language" value={languageInput} onChange={e => dispatch({ type: "SET_LANGUAGE_INPUT", value: e.target.value })} />
+      <input className={style.submit} type="submit" value="Render" />
     </form>
   );
 }

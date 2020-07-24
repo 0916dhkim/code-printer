@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <div className={style.interface}>
-        <h1>Code Printer</h1>
+        <h1 className={style.heading}>Code Printer</h1>
         <Controls />
         {isLoading && <p>Loading ...</p>}
         {error && <p>{error.message}</p>}

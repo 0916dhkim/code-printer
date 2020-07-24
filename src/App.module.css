@@ -3,3 +3,20 @@
     display: none;
   }
 }
+
+@media screen {
+  .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    box-shadow: 0 0 1em 1em grey;
+    margin-bottom: 1em;
+    padding: 3em;
+  }
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2em;
+}
