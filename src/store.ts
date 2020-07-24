@@ -50,6 +50,7 @@ function reducer(state: ApplicationState = initialState, action: Action): Applic
       return {
         ...state,
         isLoading: true,
+        sourceCode: undefined,
         error: undefined
       };
     case "LOAD_SOURCE_CODE":
