@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { highlight } from "highlight.js";
 import ReactHtmlParser from "react-html-parser";
 import "highlight.js/styles/default.css";
+import style from "./SourceCode.module.css";
 
 type Props = {
   sourceCode: string
@@ -24,12 +25,12 @@ export function SourceCode({ sourceCode }: Props) {
     return ret;
   }, [sourceCode]);
   return (
-    <table>
+    <table className={style.container}>
       <tbody>
         {sourceCodeLines.map((line, i) => (
           <tr key={i}>
-            <td>{i + 1}</td>
-            <tr>{ReactHtmlParser(line)}</tr>
+            <td className={style.lineNumber}>{i + 1}</td>
+            <td className={style.code}>{ReactHtmlParser(line)}</td>
           </tr>
         ))}
       </tbody>
