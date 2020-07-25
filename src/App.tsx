@@ -13,7 +13,7 @@ function App() {
   const error = useSelector((state: ApplicationState) => state.error);
 
   return (
-    <div className="App">
+    <div className={style.app}>
       <div className={style.interface}>
         <h1 className={style.heading}>Code Printer</h1>
         {isLoading

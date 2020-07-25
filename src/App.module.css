@@ -1,4 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
 @media print {
+  .app {
+    width: 120em;
+  }
   .interface {
     display: none;
   }
