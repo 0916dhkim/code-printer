@@ -1,6 +1,5 @@
 .container {
   font-family: monospace;
-  width: 120em;
 }
 
 .lineNumber {
@@ -10,5 +9,6 @@
 }
 
 .code {
-  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
