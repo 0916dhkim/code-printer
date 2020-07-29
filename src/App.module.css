@@ -1,12 +1,10 @@
 .app {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 @media print {
-  .app {
-    width: 120em;
-  }
   .interface {
     display: none;
   }

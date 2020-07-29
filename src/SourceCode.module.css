@@ -1,14 +1,23 @@
 .container {
   font-family: monospace;
+  width: 100%;
 }
 
 .lineNumber {
   text-align: right;
+  vertical-align: top;
   color: grey;
   padding-right: 1em;
 }
 
 .code {
+  vertical-align: top;
   white-space: pre-wrap;
   word-break: break-all;
+}
+
+@media print {
+  .container {
+    font-size: 8pt;
+  }
 }
