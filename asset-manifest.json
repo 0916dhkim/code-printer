@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/code-printer/static/css/main.18c65484.chunk.css",
+    "main.css": "/code-printer/static/css/main.87dbf0a7.chunk.css",
     "main.js": "/code-printer/static/js/main.e528fb52.chunk.js",
     "main.js.map": "/code-printer/static/js/main.e528fb52.chunk.js.map",
     "runtime-main.js": "/code-printer/static/js/runtime-main.651e5ab9.js",
@@ -9,17 +9,17 @@
     "static/js/2.9259d275.chunk.js": "/code-printer/static/js/2.9259d275.chunk.js",
     "static/js/2.9259d275.chunk.js.map": "/code-printer/static/js/2.9259d275.chunk.js.map",
     "index.html": "/code-printer/index.html",
-    "precache-manifest.bb0d480661f8fd6726ee6d1b81576a2c.js": "/code-printer/precache-manifest.bb0d480661f8fd6726ee6d1b81576a2c.js",
+    "precache-manifest.d1cdd6c1f0cc6c8e6de1426b3396aa14.js": "/code-printer/precache-manifest.d1cdd6c1f0cc6c8e6de1426b3396aa14.js",
     "service-worker.js": "/code-printer/service-worker.js",
     "static/css/2.ab3f4a0d.chunk.css.map": "/code-printer/static/css/2.ab3f4a0d.chunk.css.map",
-    "static/css/main.18c65484.chunk.css.map": "/code-printer/static/css/main.18c65484.chunk.css.map",
+    "static/css/main.87dbf0a7.chunk.css.map": "/code-printer/static/css/main.87dbf0a7.chunk.css.map",
     "static/js/2.9259d275.chunk.js.LICENSE.txt": "/code-printer/static/js/2.9259d275.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.651e5ab9.js",
     "static/css/2.ab3f4a0d.chunk.css",
     "static/js/2.9259d275.chunk.js",
-    "static/css/main.18c65484.chunk.css",
+    "static/css/main.87dbf0a7.chunk.css",
     "static/js/main.e528fb52.chunk.js"
   ]
 }
